@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <title>Formulario Promedios</title>
+    <style>
+        body {
+            background-color: #8B0000;
+
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .formulario-box {
+            background-color: #001F3F;
+
+            padding: 30px;
+            border-radius: 15px;
+            color: white;
+            font-weight: bold;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .btn-mostaza {
+            background-color: #FFB300;
+
+            color: white;
+            font-weight: bold;
+            border: none;
+        }
+
+        .btn-mostaza:hover {
+            background-color: #e0a800;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="formulario-box">
+        <h1>Formulario Promedios</h1>
+        <p>Calcule su promedio</p>
+        <form action="objetos/objetos_promedio.php" method="post">
+            <label for="nota_1">Nota 1</label>
+            <input type="number" name="nota_1" id="nota_1" class="form-control mb-2" required>
+
+            <label for="nota_2">Nota 2</label>
+            <input type="number" name="nota_2" id="nota_2" class="form-control mb-2" required>
+
+            <label for="nota_3">Nota 3</label>
+            <input type="number" name="nota_3" id="nota_3" class="form-control mb-3" required>
+
+            <button type="submit" name="btn_calcular" id="btn_calcular" class="btn btn-mostaza w-100">
+                Calcular
+            </button>
+        </form>
+
+        <center>
+            <br>
+            <div class="back-btn">
+                <a href="index.html" class="btn-back" style="color: white; font-weight: bold; text-decoration: none;">
+                    <i class="fas fa-arrow-left"></i> Volver al inicio
+                </a>
+            </div>
+        </center>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

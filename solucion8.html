@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Verificar Número Perfecto</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: #043a04;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            color: #006400;
+        }
+
+        h1 {
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #06a79f;
+        }
+
+        form {
+            background-color: #8fdb8f;
+            padding: 25px 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 100, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            min-width: 300px;
+        }
+
+        input[type="number"] {
+            padding: 8px 10px;
+            border-radius: 4px;
+            border: 1px solid #999;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #006400;
+            color: white;
+            padding: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #004d00;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Verificar Número Perfecto</h1>
+    <form action="objetos/objeto_solucion8.php" method="post">
+        <label for="numero">Ingrese un número:</label>
+        <input type="number" name="numero" id="numero" required>
+        <button type="submit" name="btn_perfecto">Verificar</button>
+    </form>
+    <br>
+    <div class="back-btn">
+        <a href="index.html" class="btn-back" style="color: white; font-weight: bold; text-decoration: none;">
+            <i class="fas fa-arrow-left"></i> Volver al inicio
+        </a>
+    </div>
+</body>
+
+</html>
